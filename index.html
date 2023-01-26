@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Network</title>
+    <script defer src="/script.js"></script>
   </head>
   <body>
     
@@ -42,6 +43,12 @@
           </a>
           
           </button>
+          <i class="fa-solid fa-bars"></i>
+          <div class="menu-logo">
+            <span class="menu-logo-line"></span>
+            <span class="menu-logo-line"></span>
+            <span class="menu-logo-line"></span>
+          </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
               <li class="nav-item">
@@ -57,12 +64,16 @@
               <li class="nav-item">
                 <a class="nav-link" href="#reviews">Reviews</a>
               </li>
+              <li class="nav-item contact-item">
+                <a class="nav-link" href="#contact-us">Contact us</a>
+              </li>
             </ul>
             
-              <button class="btn btn-primary" type="submit">
+              <button class="btn btn-primary contact-us-btn" type="submit">
                 Contact us
               </button>
-            </form>
+            
+            <div class="burgerMenu"><i class="fa-solid fa-x"></i></div>
           </div>
         </div>
       </nav>
@@ -123,7 +134,7 @@
     <section class="blog-section" id="blog">
       <div class="container-fluid">
         <div class="row blog-card">
-          <div class="col-sm-6">
+          <div class="col-sm-6 left-card">
             <h2>Lorem ipsum dolor <br>amet consectetur adipiscing</h2>
             <div class="blog-text">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suscipit tellus mauris a diam maecenas.</p>
@@ -131,15 +142,15 @@
             <button type="button" class="btn btn-outline-primary read-more-btn">Read more</button>
           </div>
           
-          <div class="col-sm-6">
+          <div class="col-sm-6 right-card">
             <img src="/images/Image-02.svg">
           </div>
         </div>
         <div class="row blog-card">
-          <div class="col-sm-6">
+          <div class="col-sm-6 left-card">
             <img src="/images/Image-03.svg">
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-6 right-card">
             <h2>Lorem ipsum dolor <br>amet consectetur adipiscing</h2>
             <div class="blog-text">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suscipit tellus mauris a diam maecenas.</p>
@@ -160,7 +171,7 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-3 goal-card">
+          <div class="col-sm-3 goal-card top-card">
             <div class="goal-pic">
               <img class="goal-img" src="/images/Image-04.svg">
               <div class="overlay"><div class="card-content"><button type="button" class="btn btn-primary btn-sm card-content-btn">Read more</button>
@@ -169,7 +180,7 @@
             <h4>Lorem ipsum</h4>
             <p>consectetur adipiscing</p>
           </div>
-          <div class="col-sm-3 goal-card">
+          <div class="col-sm-3 goal-card top-card">
             
             <div class="goal-pic">
               <img class="goal-img" src="/images/Image-04.svg">
@@ -179,7 +190,7 @@
             <h4>Lorem ipsum</h4>
             <p>consectetur adipiscing</p>
           </div>
-          <div class="col-sm-3 goal-card">
+          <div class="col-sm-3 goal-card top-card">
             
             <div class="goal-pic">
               <img class="goal-img" src="/images/Image-06.svg">
@@ -189,7 +200,7 @@
             <h4>Lorem ipsum</h4>
             <p>consectetur adipiscing</p>
           </div>
-          <div class="col-sm-3 goal-card">
+          <div class="col-sm-3 goal-card top-card">
             
             <div class="goal-pic">
               <img class="goal-img" src="/images/Image-07.svg">
@@ -264,8 +275,8 @@
 <section class="contact-section">
 <div class="container-fluid">
   <div class="contact-us">
-    <h3> Do you have any ideas for projects?</h3>
-    <button type="button" class="btn btn-outline-primary">Contact us</button>
+    <h3 class="top-title"> Do you have any ideas for projects?</h3>
+    <button type="button" class="btn btn-outline-primary bottom-title">Contact us</button>
   </div>
 </div>
 </section>
